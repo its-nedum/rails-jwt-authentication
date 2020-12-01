@@ -1,24 +1,89 @@
-# README
+# Authenticate Your Rails API with JWT
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the Rails API for my Hashnode blog post with the above title
+Find the blog post [here](https) 
 
-Things you may want to cover:
+## Features
 
-* Ruby version
+### User
+- Create user
+- Login user
 
-* System dependencies
+### Post
+- Create post
+- Read post
+- Update post
+- Delete post
 
-* Configuration
+### Authentication
+All the post routes was authenticated
 
-* Database creation
+## Installation
 
-* Database initialization
+Clone repo to your local machine:
 
-* How to run the test suite
+```git
+git clone https://github.com/its-nedum/rails-jwt-authentication.git
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+### Install dependencies and run locally
 
-* Deployment instructions
+install GemFile
+```
+    bundle install
+```
 
-* ...
+Create Users and Posts table
+```
+    rails db:migrate
+```
+
+Now start the rails server:
+
+```
+    rails s
+```
+
+## API Routes
+<table>
+	<tr>
+		<th>HTTP VERB</th>
+		<th>ENDPOINT</th>
+		<th>FUNCTIONALITY</th>
+	</tr>
+    <tr>
+        <td>POST</td>
+        <td>/api/v1/users</td>
+        <td>Create user account</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/api/v1/login</td>
+        <td>Login a user</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/api/v1/posts</td>
+        <td>Return all blog posts</td>
+    </tr>
+    <tr>
+        <td>POST</td>
+        <td>/api/v1/posts</td>
+        <td>Create a blog post</td>
+    </tr>
+    <tr>
+        <td>GET</td>
+        <td>/api/v1/posts/:id</td>
+        <td>Return a single post</td>
+    </tr>
+    <tr>
+        <td>PATCH / PUT</td>
+        <td>/api/v1/posts/:id</td>
+        <td>Update a blog post</td>
+    </tr>
+    <tr>
+        <td>DELETE</td>
+        <td>/api/v1/posts/:id</td>
+        <td>Delete a blog post</td>
+    </tr>
+</table>
