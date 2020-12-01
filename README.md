@@ -1,7 +1,8 @@
 # Authenticate Your Rails API with JWT
 
 This is the Rails API for my Hashnode blog post with the above title
-Find the blog post [here](https) 
+
+Find the blog post on Hashnode: [https://itsnedum.hashnode.dev/authenticate-your-rails-api-with-jwt](https://itsnedum.hashnode.dev/authenticate-your-rails-api-with-jwt) 
 
 ## Features
 
