@@ -17,7 +17,7 @@ Find the blog post on Hashnode: [https://itsnedum.hashnode.dev/authenticate-your
 - Delete post
 
 ### Authentication
-All the post routes was authenticated
+All the post routes was authenticated with JWT
 
 ## Installation
 
